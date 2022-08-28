@@ -1,1 +1,1 @@
-export { default as ProTable } from './proTable/proTable'
+export { default as ProTable } from './ProTable/ProTable'
