@@ -2,6 +2,7 @@ import dva from 'dva';
 import '@/assets/css/index.less';
 import '@/mock';
 const createHashHistory = require('history').createHashHistory
+const Router = require('@/router/router').default
 
 //1. 初始化
 const app = dva({
@@ -9,7 +10,8 @@ const app = dva({
 });
 
 //2. 路由
-app.router(require('@/router/router').default);
+app.router(Router);
+console.log(Router)
 
 //2. 注册全局model
 app.model(require('@/models/global').default);

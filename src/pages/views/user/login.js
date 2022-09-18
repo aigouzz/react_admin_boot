@@ -63,7 +63,7 @@ const Login = (props) => {
                         name="account"
                         rules={[{ required: true, message: '请输入企业名称!' }]}
                     >
-                        <Input prefix={<UserOutlined style={{ color: '#cccccc' }} />} placeholder="请输入用户名" />
+                        <Input prefix={<UserOutlined style={{ color: '#cccccc' }} />} placeholder="请输入企业名称" />
                     </Form.Item>
 
                     <Form.Item

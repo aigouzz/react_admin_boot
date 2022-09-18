@@ -13,11 +13,11 @@ export default {
     state: [],
 
     effects: {
-        *login({ payload }, { call, put }) {
-            const res = yield postAction('/login/', payload);
+        async login({ payload }, { call, put }) {
+            const res = await postAction('/login/', payload);
             if (res.code === 200) {
                 message.success("登录成功！")
-                yield put(routerRedux.push('/'))
+                await put(routerRedux.push('/'))
             }
         },
     },
