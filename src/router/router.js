@@ -19,6 +19,7 @@ const RouterConfig = ({ history, app }) => {
             component: () => import(`@/pages/${item.componentPath}`)
         }
     })
+    console.log(routes)
     const basicRoute = routes.filter(item => item.isHideInMenu)
     const layoutRoute = routes.filter(item => !item.isHideInMenu)
     return (

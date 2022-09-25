@@ -11,7 +11,6 @@ const app = dva({
 
 //2. 路由
 app.router(Router);
-console.log(Router)
 
 //2. 注册全局model
 app.model(require('@/models/global').default);

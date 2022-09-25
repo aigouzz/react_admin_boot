@@ -38,7 +38,7 @@ export const asyncImportComponent = (importComp) => {
             // eslint-disable-next-line
         }, [])
         return (
-            Component ? <Component {...props} /> : <div>加载中...</div>
+            Component ? <Component {...props} ></Component> : <div>加载中...</div>
         )
     }
     return AsyncComponent

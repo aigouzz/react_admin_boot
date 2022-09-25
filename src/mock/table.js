@@ -9,7 +9,7 @@ const tableList = [];
 
 for (let i = 0; i < 46; i += 1) {
     tableList.push({
-        id: randomUUID(),
+        id: Mock.Random.id(),
         disabled: i % 6 === 0,
         no: `code${i + 1}`,
         title: `一个任务名称${i + 1}`,
@@ -72,6 +72,7 @@ mock(
         //     'newTableList', newTableList,
         //     'valideTableList', valideTableList
         // )
+        console.log(newTableList)
         return {
             code: 200,
             result: {
